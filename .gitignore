@@ -1,6 +1,7 @@
 *.aux
 *.bbl
 *.blg
+.DS_Store
 *.dvi
 *.fdb_latexmk
 *.glg
