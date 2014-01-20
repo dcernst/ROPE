@@ -90,17 +90,20 @@ ROPE; this will allow the library to serve problems to other resources
 
 \end{section}
 
-\begin{section}{Prior Work}
+\begin{section}{Context}
 
 While there is no resource currently available that provides the
-functionality and material that will be included in the Open Problem
-Library, there is existing software that will provide a basis for ROPE,
-and which will inform its development.  Two applications that are closely
-related to the work we seek to do with ROPE are an existing problem
+functionality and material that will be included in the Resource of Open
+Problems for Education, there is existing software that will provide a basis for ROPE,
+and which will inform its development.  Three applications that are closely
+related to the work we seek to do with ROPE are: an existing problem
 library developed in the mathematics department at the University of
-Michigan by Gavin LaRose, and the National Problem Library (NPL) used by
-the WeBWorK [3] %\cite{webwork} on-line testing and assessment system, for
-which Gavin LaRose has been a software developer.
+Michigan by Gavin LaRose; the National Problem Library (NPL) used by
+the WeBWorK [3] %\cite{webwork} 
+on-line testing and assessment system, for
+which Gavin LaRose has been a software developer; and Edfinity, a  
+proprietary startup providing content and self-publishing options
+for educators.
 
 The problem library in use at the University of Michigan currently
 provides a subset of the features we envision for ROPE: it has an
@@ -111,7 +114,9 @@ course, chapter, section, keywords, difficulty, type, original use, year
 used, author, and general math topic.  The experience developing the
 underlying data structures and interface for this will be of great use in
 the development of ROPE, and we expect to be able to reuse some
-portions of its programming code as ROPE is created.  The WeBWorK NPL
+portions of its programming code as ROPE is created.  
+
+The WeBWorK NPL
 provides a similar search functionality for over 25,000 problems written
 for WeBWorK, and is integrated into WeBWorK to allow creation of problem
 sets from those problems through a library browser interface.  The data
@@ -120,7 +125,13 @@ of ROPE, and its interface with the WeBWorK system will be of
 particular use as we consider the API for ROPE and how that may allow
 connections with other systems.
 
-In addition to the Michigan problem bank and WeBWorK's NPL, there are
+Edfinity is similar in some ways to ROPE (and the WeBWorK NPL), in
+providing a searchable database of problems with the capability of 
+collecting problems into a problem set.  They also allow authors to 
+self-publish problems, with the promise of royalties if the problem is
+used frequently by other educators.
+
+In addition to the Michigan problem bank, WeBWorK's NPL and Edfinity, there are
 other problem collections that have been developed to serve specific
 purposes, and we hope to work with the developers and maintainers of those
 to enhance ROPE and to build connections with them.  These include the
@@ -129,7 +140,8 @@ which includes many questions for use with in-class voting systems; the
 GoodQuestions project [5], %\cite{goodquestions},
 which provides similar types of
 questions; and Quadbase [4], %\cite{quadbase},
-which is closest in spirit to ROPE but provides more limited options for searching and problem format,
+which is closest in spirit to ROPE but provides more limited options for 
+searching and problem format,
 and which does not support external use or problem sharing, nor the
 community feedback aspects that we envision for ROPE.  In addition, the
 Mathematical Association of America (MAA), which is the largest
@@ -730,6 +742,8 @@ over the course of the project.
   \# of problem collections & 50 & 200 \\
   \hline
   \# of problem authors & 30 & 75 \\
+  \hline
+  \# of institutions using & 15 & 40 \\
   \hline
 \end{tabular}
 \caption{Primary Measurable Outcomes and Goals}
