@@ -65,21 +65,23 @@ creating a resource with the ubiquity or power of either of those, we do
 hope to develop ROPE into the place where mathematics teachers and
 learners go to find problems and inspiration for problems for the courses
 they are teaching and learning.  We imagine going to the ROPE search page,
-such as is shown in figure~1, and searching for a topic or problem, with
-the result suggested in figure~2.  These mock-ups illustrate a number of
-the core features that ROPE will have:
+such as is shown in figure~\ref{rope1}, and searching for a topic or
+problem, with the result suggested in figure~\ref{rope2}.  These mock-ups
+illustrate a number of the core features that ROPE will have:
 
 \begin{figure}
 \begin{center}
 \framebox{\includegraphics[width=5in]{rope_search}}\\
-Fig.~1: Mock-up of ROPE search page
+\caption{Mock-up of ROPE search page}
+\label{rope1}
 \end{center}
 \end{figure}
 
 \begin{figure}
 \begin{center}
 \framebox{\includegraphics[width=5in]{rope_search_results}}\\
-Fig.~2: Mock-up of ROPE results page
+\caption{Mock-up of ROPE results page}
+\label{rope2}
 \end{center}
 \end{figure}
 
@@ -119,9 +121,62 @@ integrate with the other two features.
 
 \begin{subsection}{Searchable Problem Library}
 
+We envision that instructors will come to ROPE to find problems for
+homework or quizzes; or students will come to look for problems for review
+or practice; or authors will come to create collections of problems to
+augment those they have in their text; etc.  To serve these varied
+communities and needs, we need to have a large collection of problems that
+may be searched on multiple criteria.  Therefore, all problems in the
+resource will be tagged to make it easy to find problems associated with a
+course or course-topic, type of problem (e.g., one that requires graphical
+understanding), and other characteristics.
+
+Once problems are found that a user wants to use, s/he will be able to
+view or download the substance (e.g., \LaTeX\ code) for the problem, or
+add it to a collection of problems in ROPE that s/he has created.  When
+viewing the problems, s/he will have access to the complete description of
+the problem as it has been entered into the ROPE database.  This
+description will include information such as that indicated in
+table~\ref{metadata}.  It will be possible to search on these fields, or
+in the text of the problems themselves.
+
+We expect that most of the problems in ROPE will be coded as \LaTeX\ code
+snippets, because that is the most commonly used mark-up for mathematics
+documents.  However, because this is not uniform, we intend ROPE to
+support other formats, e.g., small \emph{Word} or \emph{OpenOffice}
+document files.  Where possible, our goal will be for it to be possible to
+convert between formats when viewing or downloading problems, and that
+among these conversions will be to template WeBWorK problem files that
+could be used by WeBWorK.
+
+\begin{center}
+\begin{table}
+\begin{tabular}{|l|l|}
+  \hline
+  \textbf{Characteristic} & \textbf{Description} \\
+  \hline
+  Author & Some identifier of the author, e.g., username \\
+  Date   & An indicator of the date the problem was authored \\
+  Difficulty & e.g., easy, medium or hard \\
+  Type & e.g., symbolic, numerical, graphical, or multiple \\
+  Course & An indicator of the course in which the problem might be used \\
+  MajorTopic & ``Chapter'' level topic categorization \\
+  MinorTopic & ``Section'' level topic categorization \\
+  RelatedProblems & Other problems in ROPE with which this is associated \\
+  RequiredTech & Technology required to solve the problem \\
+  Keywords & Specific keywords describing the problem \\
+  \hline
+\end{tabular}
+\caption{Metadata describing ROPE problems}
+\label{metadata}
+\end{table}
+\end{center}
+
 \end{subsection}
 
 \begin{subsection}{Collections of Problems and Collections}
+
+
 
 \end{subsection}
 
