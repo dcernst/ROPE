@@ -36,18 +36,22 @@ to provide added value to the library.  The goals of ROPE are:
 \begin{itemize}
   \item
     To be a \textit{free, open-source resource} that will give instructors
-    and students access to good mathematics problems.  The cost of
-    textbooks and supporting materials for courses is increasingly
-    untenable.  We believe that as academic practitioners we should work
-    to have an accessible resource that does not discriminate on the basis
-    of wealth and which does not demand advertising or private data for
-    its use.
+    and students access to an extensive collection of good mathematics
+    problems.  The cost of textbooks and supporting materials for courses
+    is increasingly untenable.  We believe that as academic practitioners
+    we should work to have an accessible resource that does not
+    discriminate on the basis of wealth and which does not demand
+    advertising or private data for its use.
   \item
-    To be an \textit{extensive, broad, and well-vetted resource} of
-    problems that can complement existing text problems, be used with
-    open-source textbooks, or be used to create practice worksheets,
-    quizzes or exams.  Instructors and students benefit from the
-    availability of good problems that they may use directly or adapt.
+    To have a mechanism for users to create \textit{problem collections,
+      and collections of collections} to group problems from the
+    resource and which they may use themselves or share with other users.
+    This will allow instructors to create problem sets, quizzes, and
+    collections of these for a course, authors to define groups of
+    problems that complement their text, and students to create practice
+    worksheets or other study aides.  This flexibility in use and
+    sharing of collections will allow more and better use cases for the
+    resource. 
   \item
     To provide the mechanism for a \textit{community of users} of these
     problems, who may contribute problems, content and feedback on
@@ -117,7 +121,9 @@ In the following we discuss the three key functionalities we envision for
 ROPE: the searchable problem library, from which users may view and
 download problems; the collections feature, and ability to create
 collections of collections; and its community of users and how that will
-integrate with the other two features.
+integrate with the other two features.  In a final section we discuss some
+of the extensions and technical details that we expect to make it as
+flexible, useful and usable as we expect.
 
 \begin{subsection}{Searchable Problem Library}
 
@@ -176,81 +182,96 @@ could be used by WeBWorK.
 
 \begin{subsection}{Collections of Problems and Collections}
 
+Any user of a problem resource is unlikely to use a single problem and
+then stop.  We anticipate that most users will be looking for groups of
+problems to use on quizzes, homeworks, study sheets, or to complement
+different sections of their textbook.  ROPE will therefore support the
+definition of such collections by its users.  The simplest such collection
+would be a list of problems, such as might appear in a problem set, study
+guide or quiz.
 
+In addition, a collection in ROPE may contain other collections and
+textual metadata.  Thus, a user may construct a collection of problem sets
+for a course that s/he is teaching, or may construct a collection of
+problem sets with embedded information that provides context (e.g., the
+textbook being used, or the expectations for the ordering of material,
+etc.) for her/him when s/he returns to use the sets again, or for others
+with whom s/he shares the collection.
+
+The ability to define such flexible and extensible sets also allows 
+textbook authors (for texts published by a standard publisher, or for
+authors of open-content texts) to establish collections of problems to
+complement the text.  These collections could then be shared with any user 
+who is using the text.  We hope that this will be an invaluable resource
+for authors of open-content textbooks, as well as being useful for any
+with an interest in finding good problems to complement their text of
+course.  
 
 \end{subsection}
 
 \begin{subsection}{Community of Users}
 
+Users of ROPE will be able to use the problems in the resource, build
+their own collections of problems, and add to it.  Integral to our vision
+for ROPE is that users will be active in contributing problems, rating
+problems that exist, and providing valuable feedback to other users about
+problems and how they may have been effectively used.
+
+As suggested in the mock-up results page (figure~\ref{rope2}), users will
+be able to rate problems, and endorse them to others.  They will also be
+able to use comments about the problems that may be useful to other
+users.  In addition, as users create problem collections that they share
+with other users, they will be making connections within the community
+that will provide further added value to the resource.  
+
+In addition, we expect that users will be able to contribute additional
+problems to ROPE.  The grant PIs will work with an advisory group to
+determine the best model for moderation and vetting of contributed
+problems, and to cultivate a userbase that will end up forming the
+community that we imagine for ROPE.
+
 \end{subsection}
 
-\textbf{\textit{All of the following needs to be repackaged into the
-    preceding subsections, or deleted.}}
+\begin{subsection}{Extensions and Technical Details}
 
-Users will be able to search this library
-for problems by course, topic, type of problem (e.g., computational,
-conceptual, etc.), level of difficulty, and other characteristics.
-Problems will be contributed by the community of users and will have
-associated descriptive information that will include user feedback and
-comments, as well as statistics on the frequency of the problem's use.
-Users will be able to rate problems using a commonly understood ``like''
-feature (similar to those used on social networking sites), they will be
-able to create and share collections of problems they may refer to later
-for use in homework, quizzes or exams, and they will be able to comment on
-problems for the benefit of other users.  The problems will be available
-in multiple formats, and will be applicable to different uses.  In time we
-expect that the library will be extended to include other disciplines
-besides mathematics.
+There are a number of things that a problem database such as ROPE should
+support.  These include: flexibility to support different problem formats
+and types; format conversion utilities that allow problems to be converted
+between formats; and a well-documented API that will allow other
+applications to communicate with ROPE in manners other than through the
+browser interface.
 
-This electronic library will be an open library: problems will be openly
-available for use and modification by all users.  Open-source software has
-a (relatively) long and well-established history and tradition in the
-development of modern computing platforms, and provides the basis for a
-large portion of the computing infrastructure on which current technology
-from the Internet to smartphones run.  The idea underlying this software,
-of an open development of resources that may be taken, redeveloped and
-repurposed for the common good, is one which these same technologies are
-increasingly making available to other venues. We are seeing the
-development of open-content textbooks, websites that allow open sharing of
-expertise in programming, car repair and evaluation of professorial
-instruction, and more.  In this environment a Resource of Open Problems for Education (ROPE) will
-not only fit in, but thrive.
+As we indicated above, we expect that most mathematics problems will be
+coded in \LaTeX\ snippets, but that there will be users for whom this will
+not be appropriate.  ROPE will therefore support other formats such as
+small \emph{Word} or \emph{OpenOffice} files, plain text, and we expect
+others.  In particular, problems in PGML (a mark-up language used for some
+WeBWorK problems), PG (the standard WeBWorK mark-up language), and similar
+formats would be easy to include.  We will work with our advisory group to
+determine other formats that ROPE should support, and determine how this
+may fit into the technical framework that underlies the application.
 
-It is an opportune time for the development of this resource of open problems.  Mathematics educators are exploring innovative pedagogies
-including writing projects, inquiry-based learning, and on-line teaching
-and assessment.  There is a substantial community that is developing
-open-content textbooks and open-source software as a reaction to high
-textbook prices and expensive proprietary educational and research
-software.  There are natural connections between the proposed ROPE and
-educators who are looking for new resources in their teaching, as well as
-with the open-content texts and open-source software that are being
-developed.  ROPE will provide pedagogical innovators with new and
-different problems to use as they work on different ways to improve their
-instruction; will provide authors and users of open-content textbooks a
-problem resource to populate and augment the problem lists in their texts;
-and will be able to connect with open-source software projects that
-deliver and display mathematical content and problems.
+Given a variety of formats, of course, for the resource to be as useful as
+we envision it must be possible to convert between formats.  A user of
+\emph{Word} may not find \LaTeX\ snippets tremendously useful, for
+example.  We will therefore support conversion between formats, insofar as
+that is possible, and generation of generic intermediate formats (e.g.,
+plain text) where that becomes prohibitively difficult.  This will allow
+users with all different backgrounds to find and use problems regardless
+of the format in which they were originally created.
 
-As a result of these connections and flexibility, we expect ROPE to be
-used by instructors in a wide range of manners.  Instructors will be able
-to use it to construct homework sets in courses for which they have
-lecture notes but an inadequate set of available homework problems.  They
-will be able to use it to augment the problems that they have available
-from their textbook, for use on homework sets, quizzes, exams, or other
-assignments---a use which may be particularly relevant for users of
-open-content texts.  Authors will be able to use it as a resource for
-problems and problem sets for their textbooks, and will be able to
-contribute problems for their texts to the library.  On-line courses and
-homework systems will be able to use it to populate their assignments.  To
-provide for its long-term sustainability and flexibility, ROPE will
-have an underlying data structure that will allow the addition of new
-problem formats and filters to transform existing formats into others
-(e.g., by transforming a problem written in \LaTeX\ to HTML or PDF, or
-from \LaTeX\ to a problem for an on-line homework system) and include a
-well-documented and extensible Application Programming Interface
-(API). Through the latter, other applications will be able to ``talk'' to
-ROPE; this will allow the library to serve problems to other resources
-(e.g., the problem library for an on-line homework system).
+Finally, ROPE is to be an open resource.  We will therefore develop,
+document and publicize an API that will allow other developers to interact
+with it in meaninful and useful manners.  This will allow external
+applications to query ROPE to get file or problem data for specified
+problems or problem collections.  Among the possible external applications
+that we anticipate might be able to take advantage of this ability are
+the open-source web homework system WeBWorK, open content text authors who
+can have automatically generated sets of problems for their text, and
+technically capable users who are able to write programs to automate the
+task of gathering and compiling problem collections.
+
+\end{subsection}
 
 \end{section}
 
@@ -262,7 +283,7 @@ Problems for Education, there is existing software that will provide a basis for
 and which will inform its development.  Three applications that are closely
 related to the work we seek to do with ROPE are: an existing problem
 library developed in the mathematics department at the University of
-Michigan by Gavin LaRose; the National Problem Library (NPL) used by
+Michigan by Gavin LaRose; the Open Problem Library (OPL) used by
 the WeBWorK [3] %\cite{webwork} 
 on-line testing and assessment system, for
 which Gavin LaRose has been a software developer; and Edfinity, a  
@@ -280,22 +301,26 @@ underlying data structures and interface for this will be of great use in
 the development of ROPE, and we expect to be able to reuse some
 portions of its programming code as ROPE is created.  
 
-The WeBWorK NPL
+The WeBWorK OPL (Open Problem Library)
 provides a similar search functionality for over 25,000 problems written
 for WeBWorK, and is integrated into WeBWorK to allow creation of problem
-sets from those problems through a library browser interface.  The data
-structures used in the NPL will provide added insight on the development
+sets from those problems through a library browser interface.  It is,
+necessarily, strictly a resource of problems for WeBWorK, however, and
+therefore does not provide the flexibility and extensibility that we
+envision for ROPE.  None the less, we do expect that the data structures
+used in the OPL will provide added insight on the development 
 of ROPE, and its interface with the WeBWorK system will be of
 particular use as we consider the API for ROPE and how that may allow
 connections with other systems.
 
-Edfinity is similar in some ways to ROPE (and the WeBWorK NPL), in
+Edfinity is similar in some ways to ROPE (and the WeBWorK OPL), in
 providing a searchable database of problems with the capability of 
 collecting problems into a problem set.  They also allow authors to 
 self-publish problems, with the promise of royalties if the problem is
-used frequently by other educators.
+used frequently by other educators.  However, it is not an open source
+application and is run by a corporation.
 
-In addition to the Michigan problem bank, WeBWorK's NPL and Edfinity, there are
+In addition to the Michigan problem bank, WeBWorK's OPL and Edfinity, there are
 other problem collections that have been developed to serve specific
 purposes, and we hope to work with the developers and maintainers of those
 to enhance ROPE and to build connections with them.  These include the
@@ -307,15 +332,16 @@ questions; and Quadbase [4], %\cite{quadbase},
 which is closest in spirit to ROPE but provides more limited options for 
 searching and problem format,
 and which does not support external use or problem sharing, nor the
-community feedback aspects that we envision for ROPE.  In addition, the
-Mathematical Association of America (MAA), which is the largest
-professional organization supporting the teaching and learning of
-undergraduate mathematics, has been exploring the possibility of creating
-a problem bank for problems found in its journals.  The MAA is also the
-hosting institution for the WeBWorK project.  We have been in discussion
-with the leadership of the MAA about ROPE and will pursue the
-possibility that it can be connected to the idea of a journal problem
-library as well.
+community feedback aspects that we envision for ROPE.  
+% In addition, the
+% Mathematical Association of America (MAA), which is the largest
+% professional organization supporting the teaching and learning of
+% undergraduate mathematics, has been exploring the possibility of creating
+% a problem bank for problems found in its journals.  The MAA is also the
+% hosting institution for the WeBWorK project.  We have been in discussion
+% with the leadership of the MAA about ROPE and will pursue the
+% possibility that it can be connected to the idea of a journal problem
+% library as well.
 
 In addition to these specific applications which support some subset of
 the features of ROPE, there are a growing number of social networking
@@ -331,152 +357,6 @@ sites, and ROPE will adopt these ideas to give users feedback on
 problems in the library, and to develop problem collections which they may
 use semester to semester and which they may share with colleagues or with
 all users of the system.
-
-
-\end{section}
-
-\begin{section}{Project Details}
-
-\begin{figure}
-\begin{center}
-\includegraphics[height=2.5in]{um_search1}\quad
-\includegraphics[height=2.5in]{um_result1}\\
-\caption{UM Problem Library: left, search form; right, sample search result}
-\label{umprobbank}
-\end{center}
-\end{figure}
-
-The problem library in use in the mathematics department at the University
-of Michigan is shown in Figure~\ref{umprobbank}, which shows the
-search interface and a sample problem as displayed in a search result.
-This illustrates in a general way the basic search characteristics that
-will be supported by ROPE: the ability to locate problems that are
-associated with specific topics in a course, which are of varying levels
-of difficulty, that have specific characteristics (such as use of
-graphically presented or tabular data), or which were used in specific
-contexts (as homework problems, on quizzes, etc.).  This project will
-dramatically rework this application, allowing it to address the goals
-that are laid out in the introduction of this proposal, by including
-\begin{itemize}
-  \item
-    scalability to support many more users, problems and problem formats,
-  \item 
-    community site membership and interactions,
-  \item 
-    problem moderation and editing,
-  \item 
-    problem filtering to generate alternate formats from existing
-    formats,
-  \item
-    a modern, flexible interface that supports these features, and
-  \item
-    a well-documented API that will allow other applications to
-    communicate with ROPE in manners other than through the browser
-    interface.
-\end{itemize}
-These goals are described in greater detail in the following subsections.
-
-\begin{subsection}{Scalability}
-
-The problem library at the University of Michigan runs behind the
-University web-login system and has access restricted to instructors in
-the mathematics department. It accordingly supports a user base of several
-hundred users, all of whom are defined by external data sources and need
-no further identification or system characteristics. ROPE will support
-thousands of users with internally defined characteristics (names, e-mail
-addresses, password information, etc.). Accordingly, we will in the course
-of the project expand the database used for the University of Michigan
-system to support this. In addition, we will establish the workflow to
-allow for users to author, submit and rate problems, determine the
-appropriate manner in which moderation, editing of and commenting on
-problems should take place, and add these functions to the problem code.
-
-Problem types supported by the University of Michigan problem bank are
-\LaTeX\ and external formats (\emph{Word} or \emph{OpenOffice} document
-snippets). All problems for the problem bank are currently maintained as
-separate files. For ROPE we will completely revise the problem data
-structures so that all problem data are maintained in the system's
-database, and completely rework the data maintained for problems to extend
-the types of descriptive data for the problems and to support additional
-file formats and the ability to add additional formats as they become
-useful.
-
-\end{subsection}
-
-\begin{subsection}{Community and Site Moderation}
-
-An aspect that is missing from the current problem bank is a mechanism for
-users to provide feedback on the quality and usefulness of problems. ROPE will address this by including the ability for users to vote and
-comment on problems in the library.  The data management and manner in
-which this is to be done will be added to the current problembank
-model.  In addition, problem view/download statistics will be provided as
-part of the metadata about problems.
-
-We will determine the nature of the voting/commenting system used, in
-consultation with the Advisory Group, with the goal of maximizing its
-usefulness and minimizing the possibility of any abuse. ROPE will also
-support comment and problem flagging so that problems or comments with
-errors can be updated by ROPE moderators. We anticipate that the moderators
-will initially be drawn from the grant personnel, and will work with the
-Advisory Group to determine the best manner to expand the group of people
-who are engaged in this activity.  (We discuss the project's Advisory
-Group in the following sections.)  ROPE will also support problem
-authoring or submission from users in its community.  The degree of
-moderation for this activity (if any) will also be determined by the
-project personnel, including our Advisory Group.
-
-In addition, ROPE will support a sharable problem collection feature.
-This will allow users to create problem lists for their own
-uses---homework sets for given courses, etc.---and to share these lists.
-Thus an instructor teaching a course will be able to share her/his problem
-lists with other faculty at her/his institution, or with colleagues at
-other institutions.  In addition, book authors (and publishers) could
-build problem lists for their texts that would then be openly available
-for anyone using those texts.
-
-\end{subsection}
-
-\begin{subsection}{Problem Filtering}
-
-As we add additional problem formats to ROPE, we will build in the
-ability to convert between some of the formats and output types, and to
-add additional filters as they are needed and developed. We anticipate
-three initial filters:
-\begin{itemize}
-  \item
-    a filter converting \TeX\ formatted problems to PDF output;
-  \item
-    a filter converting \TeX\ formatted problems to a rudimentary WeBWorK
-    problem file; and
-  \item
-    a filter converting WeBWorK formatted problems to \TeX\ output. 
-\end{itemize}
-These will serve to provide significant additional functionality to ROPE and will be templates that illustrate the manner in which additional
-filters may be constructed.
-
-\end{subsection}
-
-\begin{subsection}{Interface}
-
-Considering these features and goals, it is clear that the simple search
-and results interface used by the University of Michigan problem bank
-system (Figure~\ref{umprobbank}) will need to be completely re-imagined.
-We, with our Advisory Group, will work to develop an entirely new
-interface that supports the precision of searching that we need and the
-multitude of new data and features that ROPE will support.
-
-\end{subsection}
-
-\begin{subsection}{API and Documentation}
-
-A natural extension to the filtering system that will be developed for ROPE is a mechanism by which other applications can use the generated
-problem formats. To allow this, we will develop an easily used API by
-which external applications may query ROPE to get file or problem data
-for specified problems. A first application for this will be to allow the
-open-source web homework system WeBWorK to include problems drawn from ROPE.  We will work with WeBWorK developers and the WeBWorK leadership
-group on this aspect of the project.
-
-\end{subsection}
 
 \end{section}
 
@@ -976,3 +856,217 @@ number of students in those courses.  From these users our goal is to have
 
 
 
+% taken out of the description
+\textbf{\textit{All of the following needs to be repackaged into the
+    preceding subsections, or deleted.}}
+
+Users will be able to search this library
+for problems by course, topic, type of problem (e.g., computational,
+conceptual, etc.), level of difficulty, and other characteristics.
+Problems will be contributed by the community of users and will have
+associated descriptive information that will include user feedback and
+comments, as well as statistics on the frequency of the problem's use.
+Users will be able to rate problems using a commonly understood ``like''
+feature (similar to those used on social networking sites), they will be
+able to create and share collections of problems they may refer to later
+for use in homework, quizzes or exams, and they will be able to comment on
+problems for the benefit of other users.  The problems will be available
+in multiple formats, and will be applicable to different uses.  In time we
+expect that the library will be extended to include other disciplines
+besides mathematics.
+
+This electronic library will be an open library: problems will be openly
+available for use and modification by all users.  Open-source software has
+a (relatively) long and well-established history and tradition in the
+development of modern computing platforms, and provides the basis for a
+large portion of the computing infrastructure on which current technology
+from the Internet to smartphones run.  The idea underlying this software,
+of an open development of resources that may be taken, redeveloped and
+repurposed for the common good, is one which these same technologies are
+increasingly making available to other venues. We are seeing the
+development of open-content textbooks, websites that allow open sharing of
+expertise in programming, car repair and evaluation of professorial
+instruction, and more.  In this environment a Resource of Open Problems for Education (ROPE) will
+not only fit in, but thrive.
+
+It is an opportune time for the development of this resource of open problems.  Mathematics educators are exploring innovative pedagogies
+including writing projects, inquiry-based learning, and on-line teaching
+and assessment.  There is a substantial community that is developing
+open-content textbooks and open-source software as a reaction to high
+textbook prices and expensive proprietary educational and research
+software.  There are natural connections between the proposed ROPE and
+educators who are looking for new resources in their teaching, as well as
+with the open-content texts and open-source software that are being
+developed.  ROPE will provide pedagogical innovators with new and
+different problems to use as they work on different ways to improve their
+instruction; will provide authors and users of open-content textbooks a
+problem resource to populate and augment the problem lists in their texts;
+and will be able to connect with open-source software projects that
+deliver and display mathematical content and problems.
+
+As a result of these connections and flexibility, we expect ROPE to be
+used by instructors in a wide range of manners.  Instructors will be able
+to use it to construct homework sets in courses for which they have
+lecture notes but an inadequate set of available homework problems.  They
+will be able to use it to augment the problems that they have available
+from their textbook, for use on homework sets, quizzes, exams, or other
+assignments---a use which may be particularly relevant for users of
+open-content texts.  Authors will be able to use it as a resource for
+problems and problem sets for their textbooks, and will be able to
+contribute problems for their texts to the library.  On-line courses and
+homework systems will be able to use it to populate their assignments.  To
+provide for its long-term sustainability and flexibility, ROPE will
+have an underlying data structure that will allow the addition of new
+problem formats and filters to transform existing formats into others
+(e.g., by transforming a problem written in \LaTeX\ to HTML or PDF, or
+from \LaTeX\ to a problem for an on-line homework system) and include a
+well-documented and extensible Application Programming Interface
+(API). Through the latter, other applications will be able to ``talk'' to
+ROPE; this will allow the library to serve problems to other resources
+(e.g., the problem library for an on-line homework system).
+
+
+\begin{section}{Project Details}
+
+\begin{figure}
+\begin{center}
+\includegraphics[height=2.5in]{um_search1}\quad
+\includegraphics[height=2.5in]{um_result1}\\
+\caption{UM Problem Library: left, search form; right, sample search result}
+\label{umprobbank}
+\end{center}
+\end{figure}
+
+The problem library in use in the mathematics department at the University
+of Michigan is shown in Figure~\ref{umprobbank}, which shows the
+search interface and a sample problem as displayed in a search result.
+This illustrates in a general way the basic search characteristics that
+will be supported by ROPE: the ability to locate problems that are
+associated with specific topics in a course, which are of varying levels
+of difficulty, that have specific characteristics (such as use of
+graphically presented or tabular data), or which were used in specific
+contexts (as homework problems, on quizzes, etc.).  This project will
+dramatically rework this application, allowing it to address the goals
+that are laid out in the introduction of this proposal, by including
+\begin{itemize}
+  \item
+    scalability to support many more users, problems and problem formats,
+  \item 
+    community site membership and interactions,
+  \item 
+    problem moderation and editing,
+  \item 
+    problem filtering to generate alternate formats from existing
+    formats,
+  \item
+    a modern, flexible interface that supports these features, and
+  \item
+    a well-documented API that will allow other applications to
+    communicate with ROPE in manners other than through the browser
+    interface.
+\end{itemize}
+These goals are described in greater detail in the following subsections.
+
+\begin{subsection}{Scalability}
+
+The problem library at the University of Michigan runs behind the
+University web-login system and has access restricted to instructors in
+the mathematics department. It accordingly supports a user base of several
+hundred users, all of whom are defined by external data sources and need
+no further identification or system characteristics. ROPE will support
+thousands of users with internally defined characteristics (names, e-mail
+addresses, password information, etc.). Accordingly, we will in the course
+of the project expand the database used for the University of Michigan
+system to support this. In addition, we will establish the workflow to
+allow for users to author, submit and rate problems, determine the
+appropriate manner in which moderation, editing of and commenting on
+problems should take place, and add these functions to the problem code.
+
+Problem types supported by the University of Michigan problem bank are
+\LaTeX\ and external formats (\emph{Word} or \emph{OpenOffice} document
+snippets). All problems for the problem bank are currently maintained as
+separate files. For ROPE we will completely revise the problem data
+structures so that all problem data are maintained in the system's
+database, and completely rework the data maintained for problems to extend
+the types of descriptive data for the problems and to support additional
+file formats and the ability to add additional formats as they become
+useful.
+
+\end{subsection}
+
+\begin{subsection}{Community and Site Moderation}
+
+An aspect that is missing from the current problem bank is a mechanism for
+users to provide feedback on the quality and usefulness of problems. ROPE will address this by including the ability for users to vote and
+comment on problems in the library.  The data management and manner in
+which this is to be done will be added to the current problembank
+model.  In addition, problem view/download statistics will be provided as
+part of the metadata about problems.
+
+We will determine the nature of the voting/commenting system used, in
+consultation with the Advisory Group, with the goal of maximizing its
+usefulness and minimizing the possibility of any abuse. ROPE will also
+support comment and problem flagging so that problems or comments with
+errors can be updated by ROPE moderators. We anticipate that the moderators
+will initially be drawn from the grant personnel, and will work with the
+Advisory Group to determine the best manner to expand the group of people
+who are engaged in this activity.  (We discuss the project's Advisory
+Group in the following sections.)  ROPE will also support problem
+authoring or submission from users in its community.  The degree of
+moderation for this activity (if any) will also be determined by the
+project personnel, including our Advisory Group.
+
+In addition, ROPE will support a sharable problem collection feature.
+This will allow users to create problem lists for their own
+uses---homework sets for given courses, etc.---and to share these lists.
+Thus an instructor teaching a course will be able to share her/his problem
+lists with other faculty at her/his institution, or with colleagues at
+other institutions.  In addition, book authors (and publishers) could
+build problem lists for their texts that would then be openly available
+for anyone using those texts.
+
+\end{subsection}
+
+\begin{subsection}{Problem Filtering}
+
+As we add additional problem formats to ROPE, we will build in the
+ability to convert between some of the formats and output types, and to
+add additional filters as they are needed and developed. We anticipate
+three initial filters:
+\begin{itemize}
+  \item
+    a filter converting \TeX\ formatted problems to PDF output;
+  \item
+    a filter converting \TeX\ formatted problems to a rudimentary WeBWorK
+    problem file; and
+  \item
+    a filter converting WeBWorK formatted problems to \TeX\ output. 
+\end{itemize}
+These will serve to provide significant additional functionality to ROPE and will be templates that illustrate the manner in which additional
+filters may be constructed.
+
+\end{subsection}
+
+\begin{subsection}{Interface}
+
+Considering these features and goals, it is clear that the simple search
+and results interface used by the University of Michigan problem bank
+system (Figure~\ref{umprobbank}) will need to be completely re-imagined.
+We, with our Advisory Group, will work to develop an entirely new
+interface that supports the precision of searching that we need and the
+multitude of new data and features that ROPE will support.
+
+\end{subsection}
+
+\begin{subsection}{API and Documentation}
+
+A natural extension to the filtering system that will be developed for ROPE is a mechanism by which other applications can use the generated
+problem formats. To allow this, we will develop an easily used API by
+which external applications may query ROPE to get file or problem data
+for specified problems. A first application for this will be to allow the
+open-source web homework system WeBWorK to include problems drawn from ROPE.  We will work with WeBWorK developers and the WeBWorK leadership
+group on this aspect of the project.
+
+\end{subsection}
+
+\end{section}

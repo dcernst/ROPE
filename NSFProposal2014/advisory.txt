@@ -1,0 +1,5 @@
+Rob Beezer <beezer@ups.edu>
+Kathi Fletcher <Kathi.Fletcher@gmail.com>
+Michael Dorff <mdorff@math.byu.edu>
+Jeff Holt <jeff@virginia.edu>
+Matt Boelkins <boelkinm@gvsu.edu>

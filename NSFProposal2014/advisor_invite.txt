@@ -1,0 +1,42 @@
+Hi X,
+
+A couple of years ago we (that is, Dana Ernst, at Northern Arizona
+University, and Spencer Hamblen, at McDaniel College, and I) submitted a
+proposal to the NSF for an Open Problem Library (OPL), for which you
+agreed to serve on an advisory committee.  It was not funded at that time,
+and since then WeBWorK has appropriated the moniker "OPL."  We're looking
+to submit a revised proposal this spring, with the new name "ROPE"
+(Resource of Open Problems for Education).
+
+The more or less succinct summary of what we're thinking of is that it
+will 
+ - Be a free, open-source resource that will give instructors and students
+   access to good mathematics problems.  The cost of textbooks and
+   supporting materials for courses is increasingly untenable.  We believe
+   that as academic practitioners we should work to have an accessible
+   resource that does not discriminate on the basis of wealth and which
+   does not demand advertising or private data for its use.
+ - Provide users the ability to create and share collections of problems,
+   and collections of collections, that they can use for various purposes
+   (e.g., homework sets, quizzes, etc.).
+ - Create a community of users who will contribute problems, content and
+   feedback on problems, and who may share the groups of problems they use
+   for specific homework sets or courses.
+
+Much of the substance of this is similar to our vision last time, but I
+think the feature set has benefited from our having thought about it for a
+while.  We are hoping that you would be interested in serving on an
+advisory group for the project if it does get funded this time around.  We
+envision that this would entail providing feedback on what we're trying to
+do and a sense of aspects of the project that we should change to address
+the needs of different constituencies.  We expect that much of this would
+be done remotely, though we anticipate that it may be useful to have one
+or two meetings of the group in person.  We will be writing in a small
+honorarium for advisory group members into the grant.
+
+Do you think this sounds like something in which you would have interest,
+and time, to do?  The timeline on the grant would be three years starting
+sometime this coming fall or winter.
+
+Thanks,
+Gavin
