@@ -31,7 +31,7 @@ Education'' (ROPE) will allow searching and browsing to find appropriate
 problems; will include descriptive information about problem usage and the
 numbers of users endorsing the problems; and will allow users to share
 problem collections and lists drawn from the library.  Because it will be
-an open {\color{red}resource}, institutions and individuals with limited {\color{red}resources} will
+an open resource, institutions and individuals with limited means will
 still have full access to it, and the community of ROPE users will be able
 to provide added value to the library.  The goals of ROPE are:
 \begin{itemize}
@@ -39,38 +39,38 @@ to provide added value to the library.  The goals of ROPE are:
     To be a \textit{free, open-source resource} that will give instructors
     and students access to an extensive collection of good mathematics
     problems.  The cost of textbooks and supporting materials for courses
-    is increasingly untenable.  We believe that as academic practitioners
-    we should work to have an accessible resource that does not
-    discriminate on the basis of wealth and which does not demand
-    advertising or private data for its use.
+    is increasingly untenable.  We believe that as academics
+    we should work to have accessible resources that do not
+    discriminate on the basis of wealth and which do not demand
+    advertising or private data for their use.
   \item
-    To have a mechanism for users to create \textit{problem collections,
-      and collections of collections} to group problems from the
-    resource and which they may use themselves or share with other users.
+    To have within this resource a mechanism for users to create
+    \textit{collections of problem, and collections of collections} 
+    which they may use themselves or share with other users.
     This will allow instructors to create problem sets, quizzes, and
-    collections of these for a course, authors to define groups of
-    problems that complement their text, and students to create practice
+    collections of these for a course, will allow authors to define groups
+    of problems that complement their text, and will allow students to create practice
     worksheets or other study aides.  This flexibility in use and
     sharing of collections will allow more and better use cases for the
     resource. 
   \item
-    To provide the mechanism for a \textit{community of users} of these
-    problems, who may contribute problems, content and feedback on
-    problems, and who may share the groups of problems they use for
-    specific homework sets or courses.
+    To provide ways to establish a \textit{community of users} of these
+    problems, who may contribute problems and related content, may provide
+    feedback on problems, and may share with other users the collections
+    they have created.
 \end{itemize}
 
 \end{section}
 
 \begin{section}{Description}
 
-Internet users go to Amazon to search for material products to buy, and
+Internet users go to Amazon to search for material products to buy, and to
 Google to find pages on the Internet.  While we do not pretend to be
 creating a resource with the ubiquity or power of either of those, we do 
 hope to develop ROPE into the place where mathematics teachers and
 learners go to find problems and inspiration for problems for the courses
 they are teaching and learning.  We imagine going to the ROPE search page,
-such as is shown in Figure~\ref{rope1}, and searching for a topic or
+such as is suggested in Figure~\ref{rope1}, and searching for a topic or
 problem, with the result suggested in Figure~\ref{rope2}.  These mock-ups
 illustrate a number of the core features that ROPE will have:
 
@@ -100,7 +100,7 @@ illustrate a number of the core features that ROPE will have:
   \item
     Search results will be easily managed, with a view of the problems and
     easy ways to view the source (e.g., \LaTeX) for the problems, add them
-    to \textit{Problem Collections\/} owned by the user, or download the
+    to Problem Collections owned by the user, or download the
     source as a small file.
   \item
     All problems will have useful metadata that describe them, including
@@ -109,22 +109,22 @@ illustrate a number of the core features that ROPE will have:
     type of problem (e.g., symbolic, numerical, graphical), etc.
   \item
     Users will be able to rate problems, endorse them, and leave comments,
-    and these data will be available to allows other users to evaluate the
-    problem and how they might want to use them.
+    and these data will be available to allow other users to evaluate the
+    problems and how they might be used.
   \item
     Users will have the ability to build their own problem collections and
-    share them with other users (if they like), and thereby download a
+    share them with other users (as they like), and thereby download a
     full source file (e.g., in \LaTeX) for a problem set, other
-    assignment, or even full list of all problem sets for a course that.
+    assignment, or even full list of all problem sets for a course.
 \end{list}
 
 In the following we discuss the three key functionalities we envision for
 ROPE: the searchable problem library, from which users may view and
-download problems; the collections feature, and ability to create
+download problems; the ability to create collections and 
 collections of collections; and its community of users and how that will
 integrate with the other two features.  In a final section we discuss some
-of the extensions and technical details that we expect to make it as
-flexible, useful and usable as we expect.
+of the extensions and technical details that we expect to make ROPE as
+flexible, useful and usable as possible.
 
 \begin{subsection}{Searchable Problem Library}
 
@@ -149,12 +149,11 @@ in the text of the problems themselves.
 
 We expect that most of the problems in ROPE will be coded as \LaTeX\ code
 snippets, because that is the most commonly used mark-up for mathematics
-documents.  However, because this is not uniform, we intend ROPE to
+documents.  However, because this is not uniform, ROPE will
 support other formats, e.g., small \emph{Word} or \emph{OpenOffice}
 document files.  Where possible, our goal will be for it to be possible to
-convert between formats when viewing or downloading problems, and that
-{\color{red}among these conversions will be to template WeBWorK problem files that
-could be used by WeBWorK.}
+convert between formats when viewing or downloading problems; this is
+addressed in greater detail in below, in section 2.4.
 
 \begin{center}
 \begin{table}
@@ -204,9 +203,14 @@ textbook authors (for texts published by a standard publisher, or for
 authors of open-content texts) to establish collections of problems to
 complement the text.  These collections could then be shared with any user 
 who is using the text.  We hope that this will be an invaluable resource
-for authors of open-content textbooks, as well as being useful for any
-with an interest in finding good problems to complement their text of
-course.  
+for authors of open-content textbooks, and other authors creating problem
+sets to complement their texts, and instructors interested in sharing
+resources.  One immediate application of these collections in ROPE will be the
+ability to share complete problem-centered course notes.  An increasing
+number of instructors are using Inquiry Based Learning (IBL) in their
+classrooms, for which course notes most commonly consist of problem sets
+with some context and other information.  This type of collection of
+materials will be very easy to create and distribute through ROPE.
 
 \end{subsection}
 
@@ -219,34 +223,36 @@ problems that exist, and providing valuable feedback to other users about
 problems and how they may have been effectively used.
 
 As suggested in the mock-up results page (Figure~\ref{rope2}), users will
-be able to rate problems, and endorse them to others.  They will also be
+be able to rate problems, and endorse them.  They will also be
 able to use comments about the problems that may be useful to other
-users.  {\color{red}In addition}, as users create problem collections that they share
+users.  As users create problem collections that they share
 with other users, they will be making connections within the community
 that will provide further added value to the resource.  
 
-{\color{red}In addition}, we expect that users will be able to contribute additional
+We will develop an easy-to-use interface through which 
+users will be able to contribute
 problems to ROPE.  The grant PIs will work with an advisory group to
 determine the best model for moderation and vetting of contributed
 problems, and to cultivate a userbase that will end up forming the
-community that we imagine for ROPE.
+community that we imagine.
 
 \end{subsection}
 
 \begin{subsection}{Extensions and Technical Details}
 
 There are a number of things that a problem database such as ROPE should
-support.  These include: flexibility to support different problem formats
+include.  These include: flexibility to support different problem formats
 and types; format conversion utilities that allow problems to be converted
 between formats; and a well-documented API that will allow other
 applications to communicate with ROPE in manners other than through the
 browser interface.
 
-As we indicated above, we expect that most mathematics problems will be
+As we indicate above, we expect that most mathematics problems will be
 coded in \LaTeX\ snippets, but that there will be users for whom this will
 not be appropriate.  ROPE will therefore support other formats such as
 small \emph{Word} or \emph{OpenOffice} files, plain text, and we expect
-others.  In particular, problems in PGML (a mark-up language used for some
+other formats as well.  In particular, problems in PGML (a mark-up
+language used for some 
 WeBWorK problems), PG (the standard WeBWorK mark-up language), and similar
 formats would be easy to include.  We will work with our advisory group to
 determine other formats that ROPE should support, and determine how this
@@ -257,9 +263,22 @@ we envision it must be possible to convert between formats.  A user of
 \emph{Word} may not find \LaTeX\ snippets tremendously useful, for
 example.  We will therefore support conversion between formats, insofar as
 that is possible, and generation of generic intermediate formats (e.g.,
-plain text) where that becomes prohibitively difficult.  This will allow
+plain text) where it becomes prohibitively difficult.  This will allow
 users with all different backgrounds to find and use problems regardless
-of the format in which they were originally created.
+of the format in which they were originally created.  There are a number
+of conversions that will be most easily implemented, and with which we
+will start: conversion of \LaTeX\ to plain text is straightforward, and
+conversion of \LaTeX\ into WeBWorK problem templates will be similarly
+easy to manage.  Conversion into fully-functional WeBWorK problems will
+be possible for ROPE problems with appropriate metadata, and we will
+specify how these data may be coded in the problems to allow that
+conversion.  Conversion between \LaTeX\ and \emph{Word} or
+\emph{OpenOffice} is more difficult, but there are several existing
+applications that do this to some degree or another, including some that
+are open source and which we would therefore be able to adapt (e.g.,
+latex2rtf [7]).  In a similar vein we expect to add conversion between
+\emph{Word} or \emph{OpenOffice} and \LaTeX\ as we continue to develop
+ROPE. 
 
 Finally, ROPE is to be an open resource.  We will therefore develop,
 document and publicize an API that will allow other developers to interact
@@ -279,17 +298,16 @@ task of gathering and compiling problem collections.
 \begin{section}{Context}
 
 While there is no resource currently available that provides the
-functionality and material that will be included in the Resource of Open
-Problems for Education, there is existing software that will provide a basis for ROPE,
-and which will inform its development.  Three applications that are closely
-related to the work we seek to do with ROPE are: an existing problem
-library developed in the mathematics department at the University of
-Michigan by Gavin LaRose; the Open Problem Library (OPL) used by
-the WeBWorK [3] %\cite{webwork} 
-on-line testing and assessment system, for
-which Gavin LaRose has been a software developer; and Edfinity, a  
-proprietary startup providing content and self-publishing options
-for educators.
+functionality and material that will be included in ROPE,
+there is existing software that will provide a
+basis for it, and which will inform its development.  Three applications
+that are closely related to the work we seek to do with ROPE are: an
+existing problem library developed in the mathematics department at the
+University of Michigan by Gavin LaRose; the Open Problem Library (OPL)
+used by the WeBWorK [3] %\cite{webwork} on-line testing and assessment
+system, for which Gavin LaRose has been a software developer; and
+Edfinity [6], a proprietary startup providing content and self-publishing
+options for educators.
 
 The problem library in use at the University of Michigan currently
 provides a subset of the features we envision for ROPE: it has an
@@ -305,8 +323,8 @@ portions of its programming code as ROPE is created.
 The WeBWorK OPL (Open Problem Library)
 provides a similar search functionality for over 25,000 problems written
 for WeBWorK, and is integrated into WeBWorK to allow creation of problem
-sets from those problems through a library browser interface.  It is,
-necessarily, strictly a resource of problems for WeBWorK, however, and
+sets from those problems through a library browser interface.  But it is,
+necessarily, strictly a resource of problems for WeBWorK, and
 therefore does not provide the flexibility and extensibility that we
 envision for ROPE.  None the less, we do expect that the data structures
 used in the OPL will provide added insight on the development 
@@ -319,7 +337,8 @@ providing a searchable database of problems with the capability of
 collecting problems into a problem set.  They also allow authors to 
 self-publish problems, with the promise of royalties if the problem is
 used frequently by other educators.  However, it is not an open-source
-application and is run by a corporation.
+application and does not support the same flexibility in problem
+collection creation that we envision for ROPE.
 
 In addition to the Michigan problem bank, WeBWorK's OPL and Edfinity, there are
 other problem collections that have been developed to serve specific
@@ -359,17 +378,36 @@ problems in the library, and to develop problem collections which they may
 use semester to semester and which they may share with colleagues or with
 all users of the system.
 
+Finally, we believe that the educational world in which we are working has
+reached a tipping point that argues strongly for the development of an open
+resource such as ROPE.  There is increasing outcry about the constraints
+and disadvantages of commercial products and the cost of higher
+education---which is only compounded by the cost of textbooks and other
+class resources.  The open source movement continues to demonstrate that
+it is possible for very good content and programs to be
+developed collaboratively and openly.  And mathematics instructors are
+increasingly connected by social networks and intentional communities.  As more
+open-content textbooks become available, ROPE will be able to provide a
+problem resource that complements their problems and work.  Programs such
+as WeBWorK and project such as Wikipedia demonstrate that free, open
+development can create products and content which is broadly useful and
+which complements and competes well with commercial products.  And
+communities such as Project NExT [2] and those connecting instructors
+using inquiry based learning have developed in to networks of
+college faculty who are actively engaged with the use of available
+resources and technology to improve their teaching.
+
 \end{section}
 
 \begin{section}{Project Implementation and Timeline}
 
-To implement ROPE, as described in the preceding section, we have the
-timeline laid out in Figure~\ref{timeline}.  This illustrates the four
-phases in which we expect work on ROPE to be carried out.  The first,
-to be completed by the end of the spring semester of 2015, is a \emph{Data
-and Interface Design} phase.  In this time we, in consultation with
-the Advisory Group, will determine the requirements for the database
-supporting ROPE and lay out its on-line user interface.
+Our timeline to implement ROPE, is shown in Figure~\ref{timeline}.  In
+summary, we will have an alpha version of the system running after summer
+and fall of 2015, to be tested in spring 2016.  In the summer of 2016 we
+will resolve issues that are determined in the alpha test, and add
+features to the system.  In the 2016--17 academic year the system will be
+in beta-testing.  Following summer 2017 we expect to have the system in
+production. 
 
 \begin{figure}
 \begin{center}
@@ -378,97 +416,78 @@ supporting ROPE and lay out its on-line user interface.
   \textbf{date} & \textbf{personnel} & \textbf{activity} & \textbf{outcome}\\
   \hline
   \hline
-  January 15 & PMs & team meeting (JMM) & initial design and data proposal\\
+  January 15 & PIs & team meeting (JMM) & initial design and data proposal\\
   \hline
-  Spring 15 & AG, PMs & on-site meeting
+  Spring 15 & AG, PIs & on-site meeting
 	& feedback on design and data proposal\\
-	& PMs & on-line meetings & finalize design and data models\\
+	& PIs & on-line meetings & finalize design and data models\\
   \hline
-  Summer 15 & PM, Pr & programming work & database, alpha
+  Summer 15 & PIs, Pr & programming work & database, alpha
 	software developed \\ 
-	& PMs & library development & initial library population \\
-	& PMs, EE & on-site meeting & initial evaluation \\
+	& PIs & library development & initial library population \\
+	& PIs, EE & on-site meeting & initial evaluation \\
   \hline
-  Fall 15, & PM & programming work & user interface finished (if
-	necessary) \\ 
-  Spring 16 & PMs & library development & expansion of library population \\
-	& PMs, At & initial testing & alpha testing of ROPE \\
+  Fall 15, & PI & programming work & user interface finished \\ 
+  Spring 16 & PIs & library development & expansion of library population \\
+	& PIs, At & initial testing & alpha testing of ROPE \\
   \hline 
-  January 16 & PMs & team meeting (JMM) & evaluation of alpha software,
+  January 16 & PIs & team meeting (JMM) & evaluation of alpha software,
 	initial library \\
+        &  & at JMM & dissemination \\
   \hline
-  Spring 16 & PMs & on-site team meeting & filter \& API data proposal \\
+  Spring 16 & PIs & on-site team meeting & alpha test evaluation and
+        feature analysis \\
   \hline
-  Summer 16 & AG, PMs & on-site meeting &
- 	feedback on filters \& API, alpha test \\
+  Summer 16 & AG, PIs & on-site meeting &
+ 	alpha test feedback, features, path to beta \\
 	& & & finalize model for moderation \\
-	& PMs & on-line meetings & finalize filter \& API ruleset \\
-	& PM, Pr & programming work & debug alpha software \\
-	& & & implement filtering and API \\
+	& PIs, Pr & programming work & develop beta software \\
   \hline
-  Fall 16 & PMs, Bt & beta testing & beta use of ROPE \\
-	& PMs, EE & on-site meeting & second evaluation \\
+  Fall 16 & PIs, Bt & beta testing & beta use of ROPE \\
+	& PIs, EE & on-site meeting & second evaluation \\
   \hline
-  January 17 & PMs & team meeting (JMM) & evaluation and planning \\
+  January 17 & PIs & team meeting (JMM) & evaluation and planning \\
+        & & JMM & dissemination \\
   \hline
-  Spring 17 & PMs & dissemination & continued beta use of ROPE \\
+  Spring 17 & PIs & dissemination & continued beta use of ROPE \\
   \hline
-  Summer 17 & PM & programming work & debugging, updates beta to
+  Summer 17 & PI & programming work & debugging, updates beta to
 	production \\ 
-	& PMs & editorial work & documentation completed \\
+	& PIs & editorial work & documentation completed \\
   \hline
-  Fall 17, & PMs & programming work & production service debugging\\
+  Fall 17, & PIs & programming work & production service debugging\\
   Spring 18 & & editorial work & documentation updated \\ 
   \hline
 \end{tabular}
-\caption{Project Timeline: personnel notation---PMs = grant project
-  managers (Ernst, Hamblen, LaRose); AG =
-  Advisory Group; Pr = contract programmer; EE = External Evaluator; At =
-  Alpha testers; Bt = Beta testers}
+\caption{Project Timeline: personnel notation---PIs = grant PIs (Ernst,
+  Hamblen, LaRose); AG = Advisory Group; Pr = contract programmer; EE =
+  External Evaluator; At = Alpha testers; Bt = Beta testers}
 \label{timeline}
 \end{center}
 \end{figure}
 
-The second phase of work, \emph{Alpha Product Development} will be carried
-out in the summer of 2015 and, as necessary, fall of 2015.  In this phase
-Gavin LaRose will work with the hired programming consultant to develop
-the database and software required for the initial version of ROPE.
-Dana Ernst and Spencer Hamblen will develop problems for, and recruit
-alpha-testers to use, this initial version, which we will launch in the
-fall of 2015.  A key part of our alpha testing will be recruitment of 15
-alpha testing consultants.  These will be users who will be paid a small
-honorarium to encourage their use of ROPE, and their contributions to
-the library.  These users will be contacted regularly in the course of the
-fall and spring semesters to get their feedback on aspects of the system
-which need revision as well as on those components which are working well.
+All programming and software development will be managed by a hired
+programming consultant and Gavin LaRose.  Problem creation and expansion
+of the problem database will be managed by Dana Ernst and Spencer
+Hamblen.  They will also recruit alpha and beta testers, who will be paid
+a small honorarium to contribute problems and provide regular feedback on
+their use of the system and how it may be improved or how it is working
+well.
 
-In the third phase of the project, \emph{Extensions and Beta Development},
-taking place in spring and summer 2016, we will develop the technical
-requirements for the problem filtering supported by ROPE and the API by
-which other applications may interact with it.  In the spring and summer
-we will finalize these requirements with the Advisory Group, and in the
-summer Gavin LaRose will work with the programmer consultant to implement
-these features.  Also in the summer Dana Ernst and Spencer Hamblen will
-continue to expand ROPE and recruit additional beta testing
-consultants.  These users will serve in a similar role to the alpha
-testing consultants.
-
-The final phase of the project will see it move from beta to a
-\emph{Production Service}.  This phase will take place in summer and fall
-of 2017.  There are three components of this: finishing debugging and
-updates that were suggested by the beta testing, moving the service to
-production hardware, and completing documentation and dissemination.  The
-first two phases of these will be completed by Gavin LaRose, in
-conjunction with the systems support staff at the University of Michigan's
-mathematics department.  The remaining tasks will be accomplished by all
-project managers, with Dana Ernst and Spencer Hamblen taking the lead.
+In its alpha and beta stages of development, we expect that ROPE will have
+a usable number of problems and a subset of the full functionality that
+the final system will have.  Essential functions (problem search,
+collections and the community of users) will be in place for alpha
+testing.  Extensions such as the conversion of problems from one format to
+another and full implementation of an
+open API are likely to wait for the beta development phase.
 
 Finally, the Math Department at the University of Michigan will be able to
 provide the required technical support to initially implement and
 subsequently maintain the computer hardware required for this project.
 While it is in development and alpha and beta testing ROPE will be
 hosted on webservers that are currently maintained in the Department and
-which have the required server capacity to support the project.  As the
+which have the required capacity to support the project.  As the
 project is transformed to a production service we will move it onto its
 own server, purchased using grant money, which will be housed and
 supported in the Department.
@@ -477,11 +496,9 @@ supported in the Department.
 
 \begin{section}{Project Personnel}
 
-The grant will be managed by Gavin LaRose, University of Michigan, Dana
+The PIs for 
+the grant are Gavin LaRose, University of Michigan, Dana
 Ernst, Northern Arizona University and Spencer Hamblen, McDaniel College.
-Stephen DeBacker, University of Michigan, will oversee the project as it
-is implemented at the University of Michigan.  Their expertise position
-them well to successfully carry out this project.
 
 \textbf{Gavin LaRose} is a lecturer~IV and manager of instructional
 technology in the Department of Mathematics at the University of Michigan.
@@ -495,9 +512,10 @@ applications in use at the University of Michigan, including data
 management and tutorial systems.  He is the author of the problem library
 that is currently in use at the University of Michigan, which will serve
 as the early prototype for ROPE.  He has won several teaching awards,
-most recently the University of Michigan College of Literature, Sciences
-and the Arts \emph{Matthews Underclass Teaching Award} and the Michigan
-MAA Section's teaching award.
+including the University of Michigan College of Literature, Sciences
+and the Arts \emph{Matthews Underclass Teaching Award}, the Michigan
+MAA Section's teaching award, and the MAA's \emph{Haimo Award for
+Distinguished College or University Teaching of Mathematics}.
 
 %\textbf{Stephen DeBacker} is an \emph{Arthur F. Thurnau} professor of
 %mathematics in the Department of Mathematics at the University of
@@ -512,8 +530,19 @@ MAA Section's teaching award.
 %department.  He will work with Gavin LaRose to oversee the project as it
 %is implemented at the University of Michigan.
 
-\textbf{Dana Ernst} is currently an Assistant Professor at Northern Arizona University in Flagstaff, AZ. He previously spent four years as an Assistant Professor at Plymouth State University in Plymouth, NH. Ernst's primary research interests
-are in the combinatorics of Coxeter groups and their associated algebraic structures.  His interests also include the scholarship of teaching and learning (SoTL) with a specialization in inquiry-based learning (IBL). He is a Special Projects Coordinator for the Academy of Inquiry-Based Learning and a mentor for several new IBL practitioners. Ernst is also a coauthor for \emph{Math Ed Matters}, which is a monthly column sponsored by the Mathematical Association of America. The column explores topics and current events related to undergraduate mathematics education. Moreover, he serves on the editorial panel for \emph{Math Horizons}.  In addition to using free and open-source
+\textbf{Dana Ernst} is currently an Assistant Professor at Northern
+Arizona University in Flagstaff, AZ. He previously spent four years as an
+Assistant Professor at Plymouth State University in Plymouth, NH. Ernst's
+primary research interests are in the combinatorics of Coxeter groups and
+their associated algebraic structures.  His interests also include the
+scholarship of teaching and learning (SoTL) with a specialization in
+inquiry-based learning (IBL). He is a Special Projects Coordinator for the
+Academy of Inquiry-Based Learning and a mentor for several new IBL
+practitioners. Ernst is also a coauthor for \emph{Math Ed Matters}, which
+is a monthly column sponsored by the Mathematical Association of
+America. The column explores topics and current events related to
+undergraduate mathematics education. Moreover, he serves on the editorial
+panel for \emph{Math Horizons}.  In addition to using free and open-source 
 software (e.g., \emph{Sage}), Ernst is inspired by the recent
 open-content textbook movement and strongly believes that educators should
 choose free, open-source, or low cost textbooks when viable alternatives
@@ -535,19 +564,24 @@ current teaching of courses that rely heavily on student problem-solving
 and other inquiry-based learning courses.
 
 The Advisory Group for the grant represents constituencies that will have
-particular interest in ROPE, and includes individuals with a wide range
-of backgrounds and experience that will allow them to provide insight and
+particular interest in ROPE, and includes individuals with a wide range of
+backgrounds and experience that will allow them to provide insight and
 advice on the project.  \textbf{Robert Beezer} is professor of mathematics
 at the University of Puget Sound.  He is an open-content textbook author,
 having authored a linear algebra textbook, and is an advocate for
 open-content authoring who has worked with other textbook authors.  He is
 also involved in the Sage open-source mathematics software system.
-\textbf{Matt Boelkins} is associate professor of mathematics at Grand
-Valley State University and is currently developing an open-content
-calculus textbook.  \textbf{Michael Dorff} is associate professor of
-mathematics at Brigham Young University.  He is the director of the
-NSF-funded BYU summer mathematics REU and the director of the NSF-funded
-Center for Undergraduate Research in Mathematics (CURM).  %\textbf{Steve
+\textbf{Matt Boelkins} is professor of mathematics at Grand Valley State
+University and is has developed an open-content calculus textbook.  He is
+an associate editor of the journal PRIMUS (Problems, Resources, and Issues
+in Mathematics Undergraduate Studies), which is one of the main journals
+devoted to the teaching of collegiate mathematics.  is associate professor
+of mathematics at Grand Valley State University and is currently
+developing an open-content calculus textbook.  \textbf{Michael Dorff} is
+associate professor of mathematics at Brigham Young University.  He is the
+director of the NSF-funded BYU summer mathematics REU and the director of
+the NSF-funded Center for Undergraduate Research in Mathematics (CURM).
+%\textbf{Steve
 %Dunbar} is professor of mathematics at the University of Nebraska,
 %Lincoln, and is the MAA's Director of Competitions.  He has made some
 %initial steps toward coding problems from the American Mathematics
@@ -560,7 +594,8 @@ production of high-quality, reusable Open Educational Resources (OER) and
 the development of innovative learning environments that build upon OER.
 \textbf{Jeff Holt} is professor of mathematics at the University of
 Virginia, and is one of the authors and continued developers of the
-WeBWorK national problem library.  %\textbf{Aaron Wangberg} is associate
+WeBWorK Open Problem Library.
+%\textbf{Aaron Wangberg} is associate
 %professor at Winona State University.  His group has written whiteboard
 %and adaptive homework tools which utilize WeBWorK and the National Problem
 %Library to conduct mathematics education research.  His group leads the
@@ -568,16 +603,18 @@ WeBWorK national problem library.  %\textbf{Aaron Wangberg} is associate
 %community on how to conduct and disseminate research programs using an
 %open framework.
 
-All of the members of the advisory group have expressed enthusiasm for the ROPE project and willingness to serve in this capacity.
+All of the members of the advisory group have expressed enthusiasm for the
+ROPE project and willingness to serve in this capacity. 
 
 The project will have an external evaluator, \textbf{Doug Ensley}, who
 will meet on-site twice in the course of the project to provide formative
 feedback.  Doug Ensley is professor of mathematics at Shippensburg
 University, has been editor of the Mathematical Sciences Digital Library,
-has written a discrete mathematics textbook, and is currently second vice
+has written a discrete mathematics textbook, and has been second vice
 president of the MAA.  He has written a library of computer based material
 for the teaching and learning of mathematics and has written award winning
-Adobe Flash educational materials.
+Adobe Flash educational materials.  He is currently a developer of
+mathematics applications for mobile devices.
 
 In addition to these individuals, we will hire a programmer to assist with
 the coding and database revision that will be done to the University of
@@ -585,72 +622,6 @@ Michigan codebase in the course of developing ROPE. These revisions
 will be significant, and the programmer will work in close collaboration
 with Gavin LaRose to develop a codebase for ROPE which will then be
 open and easily maintained and extended as appropriate. 
-
-\end{section}
-
-\begin{section}{Intellectual Merit}
-
-ROPE project will address a current need in undergraduate mathematics
-education: the need for a widely available source of good problems that
-instructors can use in a variety of educational venues.  Much of the
-learning that takes place in mathematics, and other STEM fields, is driven
-by students' work, and the success of that learning is fundamentally
-dependent on the types of problems on which they work.  We therefore
-expect ROPE to have the potential to be a significant and widely used
-tool to enhance student learning.  
-
-There are several specific aspects of ROPE which will have direct
-bearing on this.
-\begin{itemize}
-  \item
-    Its on-line search page that allows precise searches for specific
-    types of problems.
-  \item
-    The open nature of the system that allows a wide range of uses of the
-    problems in the library.
-  \item
-    The user feedback and statistics available for the problems in the
-    library. 
-  \item
-    Users' ability to create their own problem sets, and to share
-    these with other users.
-  \item
-    The explicitly extensible design of the system, allowing multiple
-    problem formats and conversions between them.
-\end{itemize}
-
-Taking these together, we expect that ROPE will develop into an
-easy-to-use, widely adopted resource with a correspondingly significant
-impact on student learning of undergraduate mathematics.
-
-\end{section}
-
-\begin{section}{Broader Impacts}
-
-The broad impact of ROPE will stem from its accessibility, ease-of-use
-and extensibility.  We believe that the features that we are including in
-ROPE will result in its use by many faculty at many institutions.  We
-expect that the largest group of users of ROPE will be faculty who are
-browsing for additional homework, test or quiz problems for their courses.
-Even with a well-written textbook there are routine and inevitable cases
-in an instructor will be at a loss to find a problem that s/he likes, and
-ROPE will be the perfect resource to fill that gap.  In addition, as
-open-content textbooks expand in popularity and availability, the
-usefulness of ROPE will similarly increase.  We anticipate that
-textbook authors may choose to define problem sets in ROPE for use by
-instructors using their texts whether they are publishing open-content
-textbooks or working with a publisher (though it is clear that the
-attractiveness of ROPE to the former may be significantly greater).
-And because ROPE will be designed from the outset to be flexible and
-extensible, it will be able to meet the changing needs of faculty in the
-future and make connections with other software projects for which a
-library of open problems will be useful.
-
-All told, we expect that ROPE should have very broad impact, reaching
-instructors at all types of colleges and universities who are teaching any
-standard mathematics course in any of a number of different ways.  We
-further expect that as ROPE develops we will be able to extend it to
-include other disciplines, also increasing its impact.
 
 \end{section}
 
@@ -682,10 +653,11 @@ with a large number of faculty who are likely to be users of ROPE
 because of their connections with other projects and organizations.  All
 three of the Ernst, Hamblen and LaRose are Project NExT [2]
 %\cite{projectnext}
-Fellows, and Gavin LaRose is a member of the Project NExT leadership team.
+Fellows, and Gavin LaRose was a member of the Project NExT leadership team
+from 1997--2012.
 Project NExT is a professional development program of the MAA which
 supports new math faculty in all aspects of their professional career,
-with an emphasis on teaching.  There are over 1300 Fellows from all parts
+with an emphasis on teaching.  There are almost 1500 Fellows from all parts
 of the United States and some surrounding countries and territories, and
 they are distinguished by their energetic embrace of new ideas and
 effective teaching strategies.  We will publicize ROPE to the Project
@@ -747,7 +719,7 @@ success; in tandem with this, we will consider the number of courses for
 which there are a reasonable number of problems.  For the purposes of our
 evaluation, we consider a reasonable number to be that which we feel would
 likely allow a user to populate homework assignments for the
-course---about 200 problems.  Given the resource, however, the next
+course---about 200 problems per course.  Given the resource, however, the next
 measurable objective is to have a significant base of users who are using
 the problems in ROPE, authoring and submitting additional problems, and
 providing feedback on the problems.  To judge users' engagement with ROPE, we will use as measures the number of users who register with the
@@ -798,7 +770,7 @@ of problems that they assign in their courses.  Because of this, we will
 use the ratings they give to problems and comments that they have about
 the problems in ROPE as an indirect measure of the quality of the
 problem library.  Our measurable outcome for this goal is that 20\% of the
-problems in ROPE will have been marked as ``liked'' by at least 2\% of
+problems in ROPE will have been marked as ``endorsed'' by at least 2\% of
 the registered number of users.  A second indirect measure of impact is to
 determine how many students are in classes using ROPE.  We will assess
 this through the end of our alpha testing (that is, when the number of
@@ -811,37 +783,37 @@ number of students in those courses.  From these users our goal is to have
 
 \end{section}
 
-\end{document}
+\begin{section}{Broader Impacts}
 
-\begin{thebibliography}{9}
+The broad impact of ROPE will stem from its accessibility, ease-of-use and
+extensibility.  We expect that the largest group of users of ROPE will be
+faculty who are browsing for additional homework, test or quiz problems
+for their courses, and constructing collections for their courses.  ROPE
+will also provide problems for users and authors of open-content and
+conventionally published textbooks, and will be particularly useful for
+open-content texts.  The PIs for the project have extensive contacts with
+faculty in a large number of institutions and communities of faculty,
+including Project NExT, those interested in Inquiry Based Learning, and
+open-content authors, which will allow for effective dissemination to
+those groups most likely to use the resource.  Because it will support
+flexible collections of problems and collections, the number of ways
+instructors will be able to use it will be broad, and it should have
+commensurately broad impact.  In addition, the flexibility and
+extensibility of its design will mean that ROPE can meet the changing
+needs of faculty in the future and make connections with other software
+projects for which a library of open problems will be useful.  We
+therefore expect that ROPE will have broad impact, reaching instructors at
+all types of colleges and universities who are teaching any standard
+mathematics course in any of a number of different ways.  We further
+expect that as ROPE develops we will be able to extend it to include other
+disciplines, further increasing its impact.
+\end{section}
 
-\bibitem{mathquest} Cline, Kelly, Mark Parker and Holly Zullo.
-    ``MathQUEST/MathVote.'' On-line resource. 2012.  Carroll College.
-    accessed 5/17/12.
-    \texttt{<http://mathquest.carroll.edu/>}.
+\begin{section}{Prior Support}
 
-\bibitem{projectnext} Higgins, Aparna, Joe Gallian, Judith Covington, and 
-    Gavin LaRose.  ``Project NExT.''  On-line information.  2012.
-    accessed 5/17/12.
-    \texttt{<http://archives.math.utk.edu/projnext/>}.
+None of the PIs have had prior NSF support in the past five years.
 
-\bibitem{webwork} The Mathematical Association of America.  ``WeBWorK.''
-    Website.  2012.  accessed 5/17/12.
-    \texttt{<http://webwork.maa.org/>}.
-
-\bibitem{quadbase} Rice University.  ``Quadbase.''  On-line resource.
-    Unknown authoring date.  accessed 5/17/12.
-    \texttt{<http://quadbase.org/>}.
-
-\bibitem{goodquestions} Terrell, Maria, Robert Connelly, David Henderson,
-    and Robert Strichartz.  ``The GoodQuestions Project.''  On-line
-    resource.  2005. Department of Mathematics, Cornell College.  accessed
-    5/17/12.
-    \texttt{<http://www.math.cornell.edu/$\sim$GoodQuestions/>}.
-
-% http://imathas.com/index.html ?
-
-\end{thebibliography}
+\end{section}
 
 \end{document}
 
@@ -1059,5 +1031,71 @@ open-source web homework system WeBWorK to include problems drawn from ROPE.  We
 group on this aspect of the project.
 
 \end{subsection}
+
+\end{section}
+
+\begin{section}{Intellectual Merit}
+
+ROPE project will address a current need in undergraduate mathematics
+education: the need for a widely available source of good problems that
+instructors can use in a variety of educational venues.  Much of the
+learning that takes place in mathematics, and other STEM fields, is driven
+by students' work, and the success of that learning is fundamentally
+dependent on the types of problems on which they work.  We therefore
+expect ROPE to have the potential to be a significant and widely used
+tool to enhance student learning.  
+
+There are several specific aspects of ROPE which will have direct
+bearing on this.
+\begin{itemize}
+  \item
+    Its on-line search page that allows precise searches for specific
+    types of problems.
+  \item
+    The open nature of the system that allows a wide range of uses of the
+    problems in the library.
+  \item
+    The user feedback and statistics available for the problems in the
+    library. 
+  \item
+    Users' ability to create their own problem sets, and to share
+    these with other users.
+  \item
+    The explicitly extensible design of the system, allowing multiple
+    problem formats and conversions between them.
+\end{itemize}
+
+Taking these together, we expect that ROPE will develop into an
+easy-to-use, widely adopted resource with a correspondingly significant
+impact on student learning of undergraduate mathematics.
+
+\end{section}
+
+\begin{section}{Broader Impacts}
+
+The broad impact of ROPE will stem from its accessibility, ease-of-use
+and extensibility.  We believe that the features that we are including in
+ROPE will result in its use by many faculty at many institutions.  We
+expect that the largest group of users of ROPE will be faculty who are
+browsing for additional homework, test or quiz problems for their courses.
+Even with a well-written textbook there are routine and inevitable cases
+in an instructor will be at a loss to find a problem that s/he likes, and
+ROPE will be the perfect resource to fill that gap.  In addition, as
+open-content textbooks expand in popularity and availability, the
+usefulness of ROPE will similarly increase.  We anticipate that
+textbook authors may choose to define problem sets in ROPE for use by
+instructors using their texts whether they are publishing open-content
+textbooks or working with a publisher (though it is clear that the
+attractiveness of ROPE to the former may be significantly greater).
+And because ROPE will be designed from the outset to be flexible and
+extensible, it will be able to meet the changing needs of faculty in the
+future and make connections with other software projects for which a
+library of open problems will be useful.
+
+All told, we expect that ROPE should have very broad impact, reaching
+instructors at all types of colleges and universities who are teaching any
+standard mathematics course in any of a number of different ways.  We
+further expect that as ROPE develops we will be able to extend it to
+include other disciplines, also increasing its impact.
 
 \end{section}
