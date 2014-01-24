@@ -39,38 +39,38 @@ to provide added value to the library.  The goals of ROPE are:
     To be a \textit{free, open-source resource} that will give instructors
     and students access to an extensive collection of good mathematics
     problems.  The cost of textbooks and supporting materials for courses
-    is increasingly untenable.  We believe that as academic practitioners
-    we should work to have an accessible resource that does not
-    discriminate on the basis of wealth and which does not demand
-    advertising or private data for its use.
+    is increasingly untenable.  We believe that as academics
+    we should work to have accessible resources that do not
+    discriminate on the basis of wealth and which do not demand
+    advertising or private data for their use.
   \item
-    To have a mechanism for users to create \textit{problem collections,
-      and collections of collections} to group problems from the
-    resource and which they may use themselves or share with other users.
+    To have within this resource a mechanism for users to create
+    \textit{collections of problem, and collections of collections} 
+    which they may use themselves or share with other users.
     This will allow instructors to create problem sets, quizzes, and
-    collections of these for a course, authors to define groups of
-    problems that complement their text, and students to create practice
+    collections of these for a course, will allow authors to define groups
+    of problems that complement their text, and will allow students to create practice
     worksheets or other study aides.  This flexibility in use and
     sharing of collections will allow more and better use cases for the
     resource. 
   \item
-    To provide the mechanism for a \textit{community of users} of these
-    problems, who may contribute problems, content and feedback on
-    problems, and who may share the groups of problems they use for
-    specific homework sets or courses.
+    To provide ways to establish a \textit{community of users} of these
+    problems, who may contribute problems and related content, may provide
+    feedback on problems, and may share with other users the collections
+    they have created.
 \end{itemize}
 
 \end{section}
 
 \begin{section}{Description}
 
-Internet users go to Amazon to search for material products to buy, and
+Internet users go to Amazon to search for material products to buy, and to
 Google to find pages on the Internet.  While we do not pretend to be
 creating a resource with the ubiquity or power of either of those, we do 
 hope to develop ROPE into the place where mathematics teachers and
 learners go to find problems and inspiration for problems for the courses
 they are teaching and learning.  We imagine going to the ROPE search page,
-such as is shown in Figure~\ref{rope1}, and searching for a topic or
+such as is suggested in Figure~\ref{rope1}, and searching for a topic or
 problem, with the result suggested in Figure~\ref{rope2}.  These mock-ups
 illustrate a number of the core features that ROPE will have:
 
@@ -100,7 +100,7 @@ illustrate a number of the core features that ROPE will have:
   \item
     Search results will be easily managed, with a view of the problems and
     easy ways to view the source (e.g., \LaTeX) for the problems, add them
-    to \textit{Problem Collections\/} owned by the user, or download the
+    to Problem Collections owned by the user, or download the
     source as a small file.
   \item
     All problems will have useful metadata that describe them, including
@@ -109,22 +109,22 @@ illustrate a number of the core features that ROPE will have:
     type of problem (e.g., symbolic, numerical, graphical), etc.
   \item
     Users will be able to rate problems, endorse them, and leave comments,
-    and these data will be available to allows other users to evaluate the
-    problem and how they might want to use them.
+    and these data will be available to allow other users to evaluate the
+    problems and how they might be used.
   \item
     Users will have the ability to build their own problem collections and
-    share them with other users (if they like), and thereby download a
+    share them with other users (as they like), and thereby download a
     full source file (e.g., in \LaTeX) for a problem set, other
-    assignment, or even full list of all problem sets for a course that.
+    assignment, or even full list of all problem sets for a course.
 \end{list}
 
 In the following we discuss the three key functionalities we envision for
 ROPE: the searchable problem library, from which users may view and
-download problems; the collections feature, and ability to create
+download problems; the ability to create collections and 
 collections of collections; and its community of users and how that will
 integrate with the other two features.  In a final section we discuss some
-of the extensions and technical details that we expect to make it as
-flexible, useful and usable as we expect.
+of the extensions and technical details that we expect to make ROPE as
+flexible, useful and usable as possible.
 
 \begin{subsection}{Searchable Problem Library}
 
@@ -149,7 +149,7 @@ in the text of the problems themselves.
 
 We expect that most of the problems in ROPE will be coded as \LaTeX\ code
 snippets, because that is the most commonly used mark-up for mathematics
-documents.  However, because this is not uniform, we intend ROPE to
+documents.  However, because this is not uniform, ROPE will
 support other formats, e.g., small \emph{Word} or \emph{OpenOffice}
 document files.  Where possible, our goal will be for it to be possible to
 convert between formats when viewing or downloading problems; this is
@@ -205,7 +205,7 @@ complement the text.  These collections could then be shared with any user
 who is using the text.  We hope that this will be an invaluable resource
 for authors of open-content textbooks, and other authors creating problem
 sets to complement their texts, and instructors interested in sharing
-resources.  One immediate application of the collections in ROPE is the
+resources.  One immediate application of these collections in ROPE will be the
 ability to share complete problem-centered course notes.  An increasing
 number of instructors are using Inquiry Based Learning (IBL) in their
 classrooms, for which course notes most commonly consist of problem sets
@@ -223,34 +223,36 @@ problems that exist, and providing valuable feedback to other users about
 problems and how they may have been effectively used.
 
 As suggested in the mock-up results page (Figure~\ref{rope2}), users will
-be able to rate problems, and endorse them to others.  They will also be
+be able to rate problems, and endorse them.  They will also be
 able to use comments about the problems that may be useful to other
 users.  As users create problem collections that they share
 with other users, they will be making connections within the community
 that will provide further added value to the resource.  
 
-We also expect that users will be able to contribute additional
+We will develop an easy-to-use interface through which 
+users will be able to contribute
 problems to ROPE.  The grant PIs will work with an advisory group to
 determine the best model for moderation and vetting of contributed
 problems, and to cultivate a userbase that will end up forming the
-community that we imagine for ROPE.
+community that we imagine.
 
 \end{subsection}
 
 \begin{subsection}{Extensions and Technical Details}
 
 There are a number of things that a problem database such as ROPE should
-support.  These include: flexibility to support different problem formats
+include.  These include: flexibility to support different problem formats
 and types; format conversion utilities that allow problems to be converted
 between formats; and a well-documented API that will allow other
 applications to communicate with ROPE in manners other than through the
 browser interface.
 
-As we indicated above, we expect that most mathematics problems will be
+As we indicate above, we expect that most mathematics problems will be
 coded in \LaTeX\ snippets, but that there will be users for whom this will
 not be appropriate.  ROPE will therefore support other formats such as
 small \emph{Word} or \emph{OpenOffice} files, plain text, and we expect
-others.  In particular, problems in PGML (a mark-up language used for some
+other formats as well.  In particular, problems in PGML (a mark-up
+language used for some 
 WeBWorK problems), PG (the standard WeBWorK mark-up language), and similar
 formats would be easy to include.  We will work with our advisory group to
 determine other formats that ROPE should support, and determine how this
@@ -261,7 +263,7 @@ we envision it must be possible to convert between formats.  A user of
 \emph{Word} may not find \LaTeX\ snippets tremendously useful, for
 example.  We will therefore support conversion between formats, insofar as
 that is possible, and generation of generic intermediate formats (e.g.,
-plain text) where that becomes prohibitively difficult.  This will allow
+plain text) where it becomes prohibitively difficult.  This will allow
 users with all different backgrounds to find and use problems regardless
 of the format in which they were originally created.  There are a number
 of conversions that will be most easily implemented, and with which we
@@ -274,7 +276,7 @@ conversion.  Conversion between \LaTeX\ and \emph{Word} or
 \emph{OpenOffice} is more difficult, but there are several existing
 applications that do this to some degree or another, including some that
 are open source and which we would therefore be able to adapt (e.g.,
-latex2rtf [7].  In a similar vein we expect to add conversion between
+latex2rtf [7]).  In a similar vein we expect to add conversion between
 \emph{Word} or \emph{OpenOffice} and \LaTeX\ as we continue to develop
 ROPE. 
 
@@ -296,9 +298,9 @@ task of gathering and compiling problem collections.
 \begin{section}{Context}
 
 While there is no resource currently available that provides the
-functionality and material that will be included in the Resource of Open
-Problems for Education, there is existing software that will provide a
-basis for ROPE, and which will inform its development.  Three applications
+functionality and material that will be included in ROPE,
+there is existing software that will provide a
+basis for it, and which will inform its development.  Three applications
 that are closely related to the work we seek to do with ROPE are: an
 existing problem library developed in the mathematics department at the
 University of Michigan by Gavin LaRose; the Open Problem Library (OPL)
@@ -377,21 +379,21 @@ use semester to semester and which they may share with colleagues or with
 all users of the system.
 
 Finally, we believe that the educational world in which we are working has
-reached a tipping point that argues strongly for the development of a
+reached a tipping point that argues strongly for the development of an open
 resource such as ROPE.  There is increasing outcry about the constraints
 and disadvantages of commercial products and the cost of higher
 education---which is only compounded by the cost of textbooks and other
 class resources.  The open source movement continues to demonstrate that
-it is possible for uniformly recognized content and programs to be
+it is possible for very good content and programs to be
 developed collaboratively and openly.  And mathematics instructors are
-increasingly connected by social networks and intentional communities, one
-of which is the Inquiry Based Learning (IBL) community.  As more
+increasingly connected by social networks and intentional communities.  As more
 open-content textbooks become available, ROPE will be able to provide a
 problem resource that complements their problems and work.  Programs such
 as WeBWorK and project such as Wikipedia demonstrate that free, open
 development can create products and content which is broadly useful and
 which complements and competes well with commercial products.  And
-communities such as Project NExT [2] have developed in to networks of
+communities such as Project NExT [2] and those connecting instructors
+using inquiry based learning have developed in to networks of
 college faculty who are actively engaged with the use of available
 resources and technology to improve their teaching.
 
@@ -477,7 +479,7 @@ a usable number of problems and a subset of the full functionality that
 the final system will have.  Essential functions (problem search,
 collections and the community of users) will be in place for alpha
 testing.  Extensions such as the conversion of problems from one format to
-another is a component of the system that and full implementation of an
+another and full implementation of an
 open API are likely to wait for the beta development phase.
 
 Finally, the Math Department at the University of Michigan will be able to
@@ -485,7 +487,7 @@ provide the required technical support to initially implement and
 subsequently maintain the computer hardware required for this project.
 While it is in development and alpha and beta testing ROPE will be
 hosted on webservers that are currently maintained in the Department and
-which have the required server capacity to support the project.  As the
+which have the required capacity to support the project.  As the
 project is transformed to a production service we will move it onto its
 own server, purchased using grant money, which will be housed and
 supported in the Department.
@@ -608,10 +610,11 @@ The project will have an external evaluator, \textbf{Doug Ensley}, who
 will meet on-site twice in the course of the project to provide formative
 feedback.  Doug Ensley is professor of mathematics at Shippensburg
 University, has been editor of the Mathematical Sciences Digital Library,
-has written a discrete mathematics textbook, and is currently second vice
+has written a discrete mathematics textbook, and has been second vice
 president of the MAA.  He has written a library of computer based material
 for the teaching and learning of mathematics and has written award winning
-Adobe Flash educational materials.
+Adobe Flash educational materials.  He is currently a developer of
+mathematics applications for mobile devices.
 
 In addition to these individuals, we will hire a programmer to assist with
 the coding and database revision that will be done to the University of
@@ -716,7 +719,7 @@ success; in tandem with this, we will consider the number of courses for
 which there are a reasonable number of problems.  For the purposes of our
 evaluation, we consider a reasonable number to be that which we feel would
 likely allow a user to populate homework assignments for the
-course---about 200 problems.  Given the resource, however, the next
+course---about 200 problems per course.  Given the resource, however, the next
 measurable objective is to have a significant base of users who are using
 the problems in ROPE, authoring and submitting additional problems, and
 providing feedback on the problems.  To judge users' engagement with ROPE, we will use as measures the number of users who register with the
@@ -767,7 +770,7 @@ of problems that they assign in their courses.  Because of this, we will
 use the ratings they give to problems and comments that they have about
 the problems in ROPE as an indirect measure of the quality of the
 problem library.  Our measurable outcome for this goal is that 20\% of the
-problems in ROPE will have been marked as ``liked'' by at least 2\% of
+problems in ROPE will have been marked as ``endorsed'' by at least 2\% of
 the registered number of users.  A second indirect measure of impact is to
 determine how many students are in classes using ROPE.  We will assess
 this through the end of our alpha testing (that is, when the number of
@@ -808,7 +811,7 @@ disciplines, further increasing its impact.
 
 \begin{section}{Prior Support}
 
-None of the PIs have prior NSF support in the past five years.
+None of the PIs have had prior NSF support in the past five years.
 
 \end{section}
 
