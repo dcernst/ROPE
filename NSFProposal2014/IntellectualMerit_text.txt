@@ -1,0 +1,21 @@
+The Resource of Open Problems for Education (ROPE) will address a current
+need in undergraduate mathematics education: the need for a
+widely-available source of high-quality, well documented problems that
+instructors can use in a variety of educational venues.  Much of the
+learning that takes place in mathematics is driven by students' work, and
+the success of that learning is fundamentally dependent on the types of
+problems on which they work.  ROPE will provide a resource that will be
+free and open-source, providing problems for users without commercial
+entanglements.  Because it will have a powerful search capability, users
+will be able to easily find problems that allow them to address their
+needs for instruction or learning.  It will allow users to create
+collections of problems, and collections of collections.  This capability
+will allow many different use-cases: for example, instructors may
+construct homework sets, quizzes, and groups of these for entire courses;
+or may construct model courses with supporting material that they can then
+share with colleagues; etc.  And it will support a community of users who
+may contribute problems, content and feedback on problems, and who may
+share their work and problem collections with others.  All of these
+characteristics, taken in sum, will result in a widely accessible and
+useful resource that may have a significant impact on mathematics
+education as a whole.

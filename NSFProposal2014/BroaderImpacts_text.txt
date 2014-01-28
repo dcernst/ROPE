@@ -1,0 +1,19 @@
+The Resource of Open Problems for Education (ROPE) will be an easy-to-use,
+high-quality resource that provides something that teachers and learners
+of mathematics need: a source of problems to evaluate and promote
+learning.  Its broad impact will stem from its ability to be such a
+resource for a wide range of users and users, from students looking for
+sample problems to study from to mathematics instructors creating entire
+IBL courses.  The PIs have extensive and varied contacts with faculty in a
+large number of institutions and communities of faculty, including Project
+NExT, those interested in inquiry-based learning, and open-content
+authors, which will allow for effective dissemination to those groups most
+likely to use the resource.  In addition, the flexibility and
+extensibility of its design will mean that ROPE can meet the changing
+needs of faculty in the future and make connections with other software
+projects for which a library of open problems will be useful.  We
+therefore expect that ROPE will have broad impact, reaching instructors at
+all types of colleges and universities who are teaching any standard
+mathematics course in any of a number of different ways.  We further
+expect that as ROPE develops we will be able to extend it to include other
+disciplines, though that is not a goal of this proposal.

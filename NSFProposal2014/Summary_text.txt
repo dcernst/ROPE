@@ -1,0 +1,20 @@
+The proposed project will develop an online, electronic library, the
+Resource of Open Problems for Education (ROPE), that will provide many
+innovative, well-tested, and documented problems that mathematics
+instructors and students can use in a wide range of courses and assignment
+types.  Any user will be able to search this library for problems by
+course, topic, type of problem (e.g., numerical, symbolic, etc.), level of
+difficulty, and other characteristics; and by keyword or problem text.
+Problems will be contributed by the community of users and will have
+associated descriptive information that will include user feedback and
+comments, as well as statistics on the frequency of the problem's use.
+Users will be able to comment on and rate problems, and flag them using a
+commonly understood "endorse" feature (similar to those used on social
+networking sites).  They will also be able to create and share collections
+of problems, and collections of these collections, they may refer to later
+for specific assignments (homework, quizzes, worksheets, etc.) or to
+describe problems sets for entire courses.  The library will support
+different problem formats (e.g., LaTeX or Word) and the ability to
+translate between them, and will be able to interact with other
+applications (for example, online homework systems) to provide problems
+for them.
