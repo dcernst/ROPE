@@ -21,7 +21,7 @@ that instructors and students may use in a wide range of courses and for a
 wide range of assignment types.  This ``Resource of Open Problems for
 Education'' (ROPE) will allow searching and browsing to find useful
 problems; will use information about problem usage and user endorsements
-to provide a collorative, ``crowd-sourced,'' vetting process for problems;
+to provide a collaborative, ``crowd-sourced,'' vetting process for problems;
 and will allow users to share collections of problems drawn from the
 library and groups of such collections.  Because it will be an open
 resource, all institutions and individuals regardless of means will have
@@ -58,7 +58,7 @@ which we may refine and further extend the system.
 
 \begin{section}{Description}
 
-Internet users go to Amazon to search for material products to buy, and to
+Internet users go to Amazon to search for products to buy, and to
 Google to find information on the Web.  While we do not pretend to be
 creating a resource with the ubiquity or power of either of those, we do
 hope to develop ROPE into the place where mathematics teachers and
@@ -90,7 +90,12 @@ features that ROPE will have:
     Users will be able to search on arbitrary keywords, or with Gmail or
     Google-like tags (e.g., ``course:calculus''), and there will be
     alternate search forms that will allow users to explicitly select
-    specific courses, chapter or section headings, etc.
+    specific courses, chapter or section headings, etc.  This search will
+    be available to anyone, without requiring that they log in to the site
+    or provide any information.  The other user features described below
+    will necessarily require that users establish a username and account
+    in ROPE so that data may be stored for them, but the data collected
+    will be little more than a username and e-mail address.
   \item
     Search results will be easily managed, with a view of the problems and
     easy ways to view the source (e.g., \LaTeX) for the problems, add them
@@ -132,7 +137,7 @@ An author is writing an open Linear Algebra text, and decides to use ROPE
 as a source for the problems she includes at the end of each section of
 her text.  She creates a collection in ROPE for her text, and within that
 collections for each chapter and section.  Using ROPE's search tool, she
-finds problem that she likes for each section of her book and uses the
+finds problems that she likes for each section of her book and uses the
 information about the problems to group those in order of difficulty and
 by type of problem.  In selecting the problems she uses both this metadata
 and the information about other ROPE users' ratings, comments, and the
@@ -180,9 +185,9 @@ problems that cover the right material, and makes a problem collection in
 ROPE for each study guide.  Because these are natively \LaTeX\ documents,
 she is able easily to download a PDF of each study guide from which to
 study.  As a separate document she creates a version of the study guides
-tha tinclude the answers and solutions to the problems she selected, where
+that include the answers and solutions to the problems she selected, where
 they are available.  Later she shares her study guide problem collections
-iwth friends in the course so that they are able to use them when studying
+with friends in the course so that they are able to use them when studying
 for the final.
 
 \end{subsection}
@@ -196,8 +201,8 @@ problems, and the manner in which it allows users to create collections of
 these problems for their and others' use and future use.  The fact that it
 is an open resource is a key to this: there is no restriction on who can
 use these problems, and there is no subscription fee or hurdle preventing
-its use.  It may be noted that as a result of this openness an instructor
-using problems from ROPE might worry abou this students finding the
+its use.  It may be noted that as a result of this openness the instructor
+using problems from ROPE might worry about his students finding the
 problems or solutions as well.  In the face of the ready availability of
 resources such as Wolfram$|$Alpha, Yahoo Answers and---even
 worse---StackOverflow, however, we feel this concern is largely beside the
@@ -337,7 +342,7 @@ Advisory Group, and with the external evaluator (the latter being paired
 with the summer meeting).  These visits are front-loaded to maximize the
 formative impact of the discussions we have with them.  We
 will be meeting online with our external evaluator during the course of the
-final year of the project to bring our evaluation to a close.
+project and in person once a year.
 
 \begin{figure}
 \begin{center}
@@ -350,29 +355,28 @@ final year of the project to bring our evaluation to a close.
         principles, data outline \\
 	    & PIs, Pr & Development & Programming, database development \\
 	    & PIs & Meeting (Mathfest) & Assess initial design,
-        revise proposal \\
+        revise plan \\
             & PIs, EE & On-line meeting & Frame evaluation, required data \\
   \hline
   Fall 15 & PIs, Pr & Development & Programming for alpha backend, UI \\
 	  & PIs & User recruitment & Alpha tester recruitment \\
   \hline
-  Jan 16 & PIs, EE, AG & Meeting (JMM) & Initial assessment of alpha
-	product,\\
-        & & & evaluation and data collection model \\
+  Jan 16 & PIs, EE & Meeting (JMM) & Frame evaluation, data collection\\
   \hline
-  Spring 16 & PIs, At & Alpha testing & Alpha testing of resource \\ 
+  Spring 16 & PIs, AG, EE & On-line meeting & Initial program assessment \\
+            & PIs, At & Alpha testing & Alpha testing of resource \\ 
 	    & PIs, At & Library development & Expansion of library \\
             & PIs, Pr & Programming work & Debugging alpha code \\
   \hline 
-  Sum 16 & PIs, AG, EE & On-site meeting (NAU) & Alpha test
-	evaluation, develop path \\
-        & & & to beta and model for moderation \\
+  Sum 16 & PIs, AG, EE & On-site meeting (McD) & Evaluation, develop
+    moderation model \\ 
 	    & PIs, Pr & Development & Develop beta software \\
 	    & PIs, AG & On-line meeting & Evaluate beta software \\
 	    & PIs & User recruitment & Beta tester recruitment \\
+	    & PIs & Meeting (Mathfest) & Planning, publicity \\
   \hline
-  Fall 16 & PIs & On-line meeting  & Assessment, obstacle
-	identification\\
+  Fall 16 % & PIs & On-line meeting  & Assessment, obstacle
+	  % identification\\
 	    & PIs, Bt & Beta testing & Beta testing of resource \\
   \hline
   Jan 17 & PIs, EE & Meeting (JMM) & Evaluation meeting \\
@@ -534,7 +538,7 @@ deal with both, ROPE is well-positioned to transcend both of these
 obstacles.
 
 \textbf{Hardware and software sustainability}---Through its development
-phases, ROPE will be supporte don existing server infrastructure
+phases, ROPE will be supported on existing server infrastructure
 maintained by the University of Michigan Department of Mathematics.  As we
 move to production, ROPE will run on grant-purchased hardware running
 Linux.  This will be installed at the University of Michigan and, as a
@@ -560,10 +564,10 @@ and usage data, used in the search result determination, will allow ROPE
 to provide the better problems in the library preferentially.  Thus, we
 expect that the overall library quality will be in part managed by the
 filtering that will be built into the problem search capability in ROPE.
-Second, we expect that the moderation plan developed will include the
-establishment of an ``editorial board'' composed of individuals from the
-ROPE community who will be able to moderate, improve, and correct the
-problems that are present in the library.  
+Second, we expect that the moderation plan developed in the course of the
+project will include the establishment of an ``editorial board'' composed
+of individuals from the ROPE community who will be able to moderate,
+improve, and correct the problems that are present in the library.
 
 \end{section}
 
@@ -605,8 +609,8 @@ effective teaching strategies.  We will publicize ROPE to the Project
 NExT Fellows, and have good reason to expect that many of them will use
 it.  In addition, the Mathematics Department at 
 the University of Michigan provides a large potential base of users, not
-only at the University, but at other institutions, as well.  Each academic
-year, approximately 150 graduate students, post-doctoral, and regular
+only at the University but at other institutions, as well.  Each academic
+year approximately 100 graduate students, post-doctoral, and regular
 faculty teach in its Introductory Program courses, which currently use the
 University of Michigan problembank; we will publicize
 the availability of ROPE to them.  The majority of these graduate
@@ -817,6 +821,45 @@ all types of colleges and universities who are teaching any standard
 mathematics course in any of a number of different ways.  We further
 expect that as ROPE develops we will be able to extend it to include other
 disciplines, though that is not a goal of this proposal.
+\end{section}
+
+\begin{section}{Future Extensions}
+
+The goal of this grant proposal is to create a resource that will have the
+core content and functionality to be broadly useful and therefore provide
+significant added value to the greater mathematical community.  We
+anticipate that at the completion of this grant we will have accomplished
+this.  There are, however, a number of extensions we hope in the long term
+to be able to add to the system.  These are beyond the scope of the
+current proposal, but we mention them here to emphasize that we see this
+project as ongoing and having great potential.
+
+\begin{itemize}
+  \item
+    \emph{Varied Problem Formats}---We expect ROPE to initially support
+    \LaTeX\ and plain text problem formats, and to generate output in
+    \LaTeX\ and PDF formats.  In the long run we anticipate being able to
+    broaden this significantly, and hope to allow other formats and manage
+    conversion between them.
+  \item
+    \emph{Well-established, Accessible API}---One of the underlying design
+    goals for ROPE will be to have a clearly defined API that will allow
+    other applications to interact with it in a productive manner.  This
+    may, for example, allow an on-line interactive text to dynamically
+    include content from ROPE, or a web homework system to query ROPE for
+    problem data.  Developing this type of extensibility will, of course,
+    require significant additional work, but we expect that our initial
+    design will allow this type of generalization.
+  \item
+    \emph{Disciplinary Expansion}---Having an open resource of problems
+    would serve many disciplines beyond mathematics.  We would love it if
+    we could work with other science disciplines to see how we could
+    expand that problem resources in ROPE to support their courses as
+    well.  We expect the data structures that underlie ROPE will be
+    flexible enough to allow this, and hope in the future to undertake
+    this type of expansion.
+\end{itemize}
+
 \end{section}
 
 \begin{section}{Prior Support}
