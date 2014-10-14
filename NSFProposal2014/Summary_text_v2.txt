@@ -1,6 +1,6 @@
 The proposed project will develop an online, electronic library, the
 Resource of Open Problems for Education (ROPE), that will provide many
-innovative, well-tested, and documented problems that mathematics that
+innovative, well-tested, and documented mathematics problems that
 will be useful in a wide range of courses and assignment types.  Because
 working problems is at the heart of student learning and engagement with
 mathematics, this will be a tool that may promote student learning and be

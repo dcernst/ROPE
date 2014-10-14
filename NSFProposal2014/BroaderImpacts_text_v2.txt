@@ -2,9 +2,9 @@ The Resource of Open Problems for Education (ROPE) will be an easy-to-use,
 high-quality resource that provides something that teachers and learners
 of mathematics need: a source of problems to evaluate and promote
 learning.  Its broad impact will stem from its ability to be such a
-resource for a wide range of users and users, from students looking for
-sample problems to study from to mathematics instructors creating entire
-IBL courses.  The PIs have extensive and varied contacts with faculty in a
+resource for a wide range of users, from students looking for sample 
+problems to study from to mathematics instructors creating entire IBL 
+courses.  The PIs have extensive and varied contacts with faculty in a
 large number of institutions and communities of faculty, including Project
 NExT, those interested in inquiry-based learning, and open-content
 authors, which will allow for effective dissemination to those groups most
